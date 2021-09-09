@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pollas-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pollas/PollasWebPart.js",
+          "manifest": "./src/webparts/pollas/PollasWebPart.manifest.json"
+        }
+      ]
+    },
+    "quiz-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/quiz/QuizWebPart.js",
+          "manifest": "./src/webparts/quiz/QuizWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PollasWebPartStrings": "lib/webparts/pollas/loc/{locale}.js",
+    "QuizWebPartStrings": "lib/webparts/quiz/loc/{locale}.js"
+  }
+}
